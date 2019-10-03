@@ -23,14 +23,21 @@ Average-Pooling with a kernel of 1 × 1
 
 Notes:
 • All Convolutional kernels were of size 3 × 3 with a padding size of 1.
+
 • All Convolutional layers included a PReLU activation function.
+
 • All Max-Pooling kernels were of size 2 × 2
+
 • Hyper-Parameters: Batch-size - 119, Learning-rate - 0.00089
+
 • Optimizer - ADAM
+
 • Augmentations- we tripled the data-set using three sets of augmentations:
-1. RandomCrop, ColorJitterBrightness(0.2), ColorJitterSaturation(0.2),
-Normalize.
-2. ColorJitterHue(0.2), ColorJitterContrast(0.2), RandomHorizontalFlip(1),
-Normalize.
+
+1. RandomCrop, ColorJitterBrightness(0.2), ColorJitterSaturation(0.2), Normalize.
+
+2. ColorJitterHue(0.2), ColorJitterContrast(0.2), RandomHorizontalFlip(1), Normalize.
+
 3. RandomCrop, RandomAffine, Normalize.
+
 • ACCURACY SCORE - 86.3%
