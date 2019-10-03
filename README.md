@@ -20,6 +20,7 @@ below:
 Average-Pooling with a kernel of 1 × 1
 8. Fully-Connected layer: 1024 to 10
 9. Log Soft-max
+
 Notes:
 • All Convolutional kernels were of size 3 × 3 with a padding size of 1.
 • All Convolutional layers included a PReLU activation function.
