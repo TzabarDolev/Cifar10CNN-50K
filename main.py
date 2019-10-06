@@ -1,5 +1,5 @@
 import torch
-import numpy
+import numpy as np
 # import torchvision
 import torchvision.datasets as dsets
 import torchvision.transforms as transforms
@@ -91,7 +91,7 @@ def visualize(n, train_err, test_err, train_loss, test_loss, file_name):
     f, (ax1, ax2) = plt.subplots(1, 2)
 
     ax1.plot(range(n), train_loss, test_loss)
-    ax1.set_yticks(numpy.arange(0, 0.6, 0.05))
+    ax1.set_yticks(np.arange(0, 0.6, 0.05))
     ax1.set_title("Loss")
     ax1.set_ylabel('Loss')
     ax1.set_xlabel('Epochs')
@@ -101,7 +101,7 @@ def visualize(n, train_err, test_err, train_loss, test_loss, file_name):
 
     ax2.plot(range(n), train_err, test_err)
     ax2.set_title("Error")
-    ax2.set_yticks(numpy.arange(0, 0.6, 0.05))
+    ax2.set_yticks(np.arange(0, 0.6, 0.05))
     ax2.set_ylabel('Error')
     ax2.set_xlabel('Epochs')
     ax2.legend(["train", "test"])
